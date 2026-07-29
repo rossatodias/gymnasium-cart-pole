@@ -9,7 +9,7 @@ Ambos utilizam o ambiente **CartPole-v1** da biblioteca Gymnasium.
 
 ---
 
-## 📋 Pré-requisitos
+## Pré-requisitos
 
 Para executar este código, você precisará do **Python 3.7+** instalado.
 
@@ -22,7 +22,7 @@ As dependências necessárias são:
 
 ---
 
-## 🚀 Instalação
+## Instalação
 
 ### 1️⃣ Clonar o repositório
 ```bash
@@ -46,7 +46,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🎮 Modo 1: Controle Manual (`human.py`)
+## Modo 1: Controle Manual (`human.py`)
 
 Este modo permite que um operador humano tente equilibrar o pêndulo utilizando as teclas do teclado. Para tornar a tarefa viável e didática, considerando o tempo de reação humano, foram aplicadas modificações na física e na velocidade de renderização.
 
@@ -57,7 +57,7 @@ python3 human.py        # Linux/macOS
 python human.py         # Windows
 ```
 
-### 🕹️ Controles
+### Controles
 
 A mecânica de controle é do tipo **Bang-Bang**, onde uma força fixa é aplicada em uma direção.
 
@@ -67,7 +67,7 @@ A mecânica de controle é do tipo **Bang-Bang**, onde uma força fixa é aplica
 
 > **Nota:** Se nenhuma tecla for pressionada, o ambiente continuará aplicando a última ação ou o padrão, por isso são necessárias correções constantes.
 
-### ⚙️ Configurações
+### Configurações
 
 Para facilitar o controle por humanos, foram aplicados os seguintes ajustes:
 
@@ -78,7 +78,7 @@ Para facilitar o controle por humanos, foram aplicados os seguintes ajustes:
 
 ---
 
-## 🤖 Modo 2: Aprendizado por Reforço (`rlearning.py`)
+## Modo 2: Aprendizado por Reforço (`rlearning.py`)
 
 Este modo treina e compara dois algoritmos de aprendizado por reforço:
 
@@ -109,7 +109,7 @@ O script irá:
 3. Gerar um gráfico comparativo (`comparacao_rl.png`)
 4. Demonstrar visualmente ambos os agentes treinados
 
-### ⚙️ Hiperparâmetros
+### Hiperparâmetros
 
 Os principais hiperparâmetros podem ser ajustados no início do arquivo:
 
@@ -125,7 +125,7 @@ Os principais hiperparâmetros podem ser ajustados no início do arquivo:
 | `LEARNING_RATE_DQN` | 0.001 | Taxa de aprendizado (DQN) |
 | `BATCH_SIZE` | 64 | Tamanho do batch (DQN) |
 
-### 📈 Saída
+### Saída
 
 - **Terminal:** Progresso do treinamento a cada 50 episódios (média, máximo, epsilon)
 - **Gráfico:** Arquivo `comparacao_rl.png` com curvas de aprendizado suavizadas
@@ -133,7 +133,7 @@ Os principais hiperparâmetros podem ser ajustados no início do arquivo:
 
 ---
 
-## 📊 Estrutura do Projeto
+## Estrutura do Projeto
 
 ```
 GymnasiumCartPole/
@@ -146,7 +146,7 @@ GymnasiumCartPole/
 
 ---
 
-## 🔧 Solução de Problemas
+## Solução de Problemas
 
 ### VS Code
 O VS Code deve perguntar: *"We noticed a new environment... do you want to select it?"* → Clique em **Yes**. Se não perguntar, faça o passo abaixo e selecione o `venv` que você acabou de criar.
